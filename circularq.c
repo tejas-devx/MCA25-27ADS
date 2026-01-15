@@ -5,7 +5,7 @@ int cq[SIZE];
 int front = -1,rear = -1;
 
 void enqueue(int val){
-    if((front == 0 && rear == SIZE -1) || (front == rear +1)) { // (front == rear+1)%n
+    if((front == 0 && rear == SIZE -1) || (front == rear +1)) { // front == (rear + 1) % SIZE
         printf("Queue Overflow! Cannot insert %d \n",val);
     } else {
         if(front == -1) {
